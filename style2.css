@@ -1,0 +1,87 @@
+body {
+    background-image: url(images/background.jpeg);
+}
+.header {
+    color: rgb(0, 175, 0);
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.navbar {
+    display: flex;
+    float: right;
+    background-color: white;
+    
+    
+}
+.navbar > a {
+    font-size: 20px;
+    padding: 10px 100px;
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover {
+    color: blue;
+}
+.row {
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.colomn > img {
+    width: 100%;
+}
+.colomn {
+    flex: 1 1 150px;
+    margin: 5px;
+    width: 100%;
+    padding: 10px;
+}
+.main-para {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    font-style: italic;
+    text-decoration: underline;
+}
+p {
+    font-size: 20px;
+}
+.bottem-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.style1-main-img > img {
+    width: 100%;
+    
+}
+.bottem-content > p {
+    padding: 30px;
+    font-size: 25px;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red;
+}
+.footer > h1 {
+    font-size: 25px;
+    text-decoration: none;
+
+}
+.footer > a {
+    display: flex;
+    float: right;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    font-size: 25px;
+    color: green;
+}
