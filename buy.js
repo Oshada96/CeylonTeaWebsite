@@ -1,3 +1,4 @@
+//variables
 let type = " ";
 let pack = " ";
 let size = " ";
@@ -8,6 +9,7 @@ let count = 0;
 let loyal = 0;
 
 
+//show the change in current cart when the user make a selection
 function teaTypeChange() {
     type = document.getElementById("type").value;
     document.getElementById("currentManu").innerHTML = "Selected Manufacturer : " + type;
@@ -29,6 +31,7 @@ function extraTypeChange() {
     cost();
 }
 
+//calculate the current total
 function cost() {
 
     let costType = 0;
@@ -98,6 +101,7 @@ function cost() {
 
 }
 
+//adding the current order to the overall order and resetting the current order
 function addOrder() {
     allOrder = allOrder + total;
     count++;
@@ -112,6 +116,7 @@ function addOrder() {
 
 
 }
+//placeing an order and resetting the overall total and the number of orders 
 function placeOrder() {
     /*
     document.getElementById("type").innerHTM.reset();
@@ -127,6 +132,7 @@ function placeOrder() {
 
 }
 
+//saving a current order as a favourite order
 function addFavourite() {
     localStorage.setItem("type", type);
     localStorage.setItem("pack", pack);
@@ -136,6 +142,7 @@ function addFavourite() {
 
 }
 
+//recall a previously saved order
 function orderFavourite() {
     document.getElementById("currentManu").innerHTML = "Selected Manufacturer : " + localStorage.getItem("type");
     document.getElementById("currentPackage").innerHTML = "Selected Packing choice : " + localStorage.getItem("pack");
@@ -153,7 +160,7 @@ function orderFavourite() {
 }
 
 
-
+//cheking the loyality amount after adding three current orders 
 function checkLoyality() {
     document.getElementById("noOfOrders").value = localStorage.getItem("noOfOrders");
 

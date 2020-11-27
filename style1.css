@@ -64,10 +64,10 @@ body {
 
 }
 @media screen and (max-width: 500px) {
-.column {
-    width: 100%;
+    .column {
+        width: 100%;
+        }
     }
-}
 
 /*content styles*/
 section {

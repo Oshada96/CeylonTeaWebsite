@@ -53,6 +53,7 @@
                 <p>Choice of Tea Manufacturer</p>
             </div>
             <div class="options">
+                <!--Drop down options for types-->
                 <select name="type" id="type" onchange="teaTypeChange()">
                     <option value=" ">Select Tea type</option>
                     <option value="Dilmah">Dilmah</option>
@@ -68,6 +69,7 @@
                 <p>Choice of packaging type</p>
             </div>
             <div class="options">
+                <!--Drop down options for packing-->
                 <select name="pack" id="pack" onchange="packTypeChange()">
                     <option value=" ">Selected Packing choice</option>
                     <option value="Tin">Tin</option>
@@ -81,6 +83,7 @@
             </div>
 
             <div class="options">
+                <!--Drop down options for size-->
                 <select name="size" id="size" onchange="sizeTypeChange()">
                     <option value=" ">Select size type</option>
                     <option value="Small">Small</option>
@@ -94,6 +97,7 @@
                 <p>Extras</p>
             </div>
             <div class="options">
+                <!--Drop down option for extras-->
                 <select name="extra" id="extra" onchange="extraTypeChange()">
                     <option value=" ">Select Extras</option>
                     <option value="Mugs">Mugs</option>
@@ -105,6 +109,7 @@
 
         </div>
         <div class="buttons">
+            <!--Adding four buttons-->
             <input class="button" type="button" value="Add to Order" onclick="addOrder()">
             <input class="button" type="button" value="Place Order" onclick="placeOrder()">
             <input class="button" type="button" value="Add to favourite" onclick="addFavourite()">
@@ -116,6 +121,7 @@
         <div class="result">
 
             <div class="current">
+                <!--Display of the current order-->
                 <h1>Your Cart</h1>
                 <label class="label" for="current" id="currentManu">Selected Manufacturer : </label>
                 <br>
@@ -129,6 +135,7 @@
             </div>
 
             <div class="overall">
+                <!--Display of the overall order-->
                 <h1>Overall Bill</h1>
                 <br>
                 <label class="label" for="overall" id="finalCost">Total : 0</label>
@@ -147,6 +154,7 @@
 
     <div class="footer">
         <p>Created by Oshada - Copyright 2020©</p>
+        <!--All the pictures are take from https://unsplash.com/-->
     </div>
 
 </body>
