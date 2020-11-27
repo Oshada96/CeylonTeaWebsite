@@ -116,15 +116,9 @@ function addOrder() {
 
 
 }
+
 //placeing an order and resetting the overall total and the number of orders 
 function placeOrder() {
-    /*
-    document.getElementById("type").innerHTM.reset();
-    document.getElementById("pack").innerHTML.reset();
-    document.getElementById("size").innerHTML.reset();
-    document.getElementById("extra").innerHTML.reset();
-    */
-
     document.getElementById("finalCost").innerHTML = "Total : 0";
     document.getElementById("noOfOrders").innerHTML = "Total number of orders is : 0";
     alert("Thank you for your Order !!!  Your Total bill is: " + allOrder);
